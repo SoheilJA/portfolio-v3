@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-Stack Developer — Django, WordPress, APIs. Trained to ship. Built to last.">
+    <title>ARYA KARIMI — NO BUGS FOUND</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@0.294.0/dist/umd/lucide.min.js"></script>
+
+</head>
+
+<body class="loading">
+
+    <!-- ██ Opening loader — orange counter like a club timer ██ -->
+    <div id="loader">
+        <div class="l-top"><span id="lBrand">ARYA KARIMI</span><span>PORTFOLIO — LOADING</span></div>
+        <div class="l-mid"><span id="loadNum">0</span><span class="pct">%</span></div>
+        <div class="l-bar"><i id="loadBar"></i></div>
+    </div>
+
+    <div id="scrollProgress"></div>
+    <div id="cursorDot" aria-hidden="true"></div>
+    <div id="cursorRing" aria-hidden="true"></div>
+
+    <!-- ██ Main navigation ██ -->
+    <header id="nav">
+        <a href="#home" class="nav-logo" id="navLogo">A<span>/</span>K</a>
+        <nav class="nav-links" id="navLinks" aria-label="main navigation"></nav>
+        <div class="nav-right" id="navRight"></div>
+    </header>
+
+    <!-- ██ Full-screen mobile menu ██ -->
+    <div id="mobileMenu">
+        <button id="mmClose" aria-label="close menu"><i data-lucide="x"></i></button>
+        <div id="mmLinks"></div>
+        <div class="mm-foot" id="mmFoot"></div>
+    </div>
+
+    <main>
+
+        <!-- ██ 01 / HERO — brand vision + B&W portrait ██ -->
+        <section id="home">
+            <div class="hero-main">
+                <div class="hero-meta h-anim" style="--hd:.05s">
+                    <span class="sq"></span><span>FULL-STACK DEVELOPER</span>
+                    <span class="rule"></span><span id="hmYear">PORTFOLIO — 2025</span>
+                </div>
+                <h1 class="hero-name" id="heroName"></h1>
+                <div class="hero-sub h-anim" id="heroSub" style="--hd:.5s"></div>
+                <p class="hero-text h-anim" id="heroText" style="--hd:.65s"></p>
+                <div class="hero-cta h-anim" style="--hd:.8s">
+                    <a class="btn btn-primary magnetic" href="#contact">START A PROJECT <i
+                            data-lucide="arrow-up-right"></i></a>
+                    <a class="btn btn-ghost" href="#work">SEE THE WORK</a>
+                </div>
+                <div class="hero-utils h-anim" style="--hd:.95s">
+                    <button id="soundBtn" aria-label="toggle sound">
+                        <span class="eq"><i></i><i></i><i></i></span>
+                        <span id="soundLbl">SOUND — OFF</span>
+                    </button>
+                    <div class="scroll-cue">SCROLL <i data-lucide="chevron-down"></i></div>
+                </div>
+            </div>
+            <div class="hero-media brk">
+                <img id="heroImg" src="https://picsum.photos/seed/operator-portrait/900/1200.jpg"
+                    alt="Black and white portrait of the developer">
+                <span class="stamp">EST. 2019 — TEHRAN</span>
+                <span class="v-cap">FIG.00 — THE OPERATOR</span>
+            </div>
+            <div class="hero-stats h-anim" id="heroStats" style="--hd:1.05s"></div>
+        </section>
+
+        <!-- Orange ticker 1 (marquee_summary_1) -->
+        <div class="hazard" aria-hidden="true"></div>
+        <div class="marquee mq-orange" id="mq1" style="--dur:30s"></div>
+
+        <!-- ██ 02 / METHOD — scroll-driven words (service_sum_*) ██ -->
+        <section id="method" aria-label="method">
+            <div class="pin">
+                <div class="scrub-rail"><i id="railFill"></i><span class="tick"></span><span class="tick"></span><span
+                        class="tick"></span><span class="tick"></span></div>
+                <div class="scrub-bignum" id="scrubNum" aria-hidden="true">01</div>
+                <div id="stages"></div>
+                <div class="scrub-meta"><span id="scrubPhase">PHASE 01 — PLAN</span><span><span class="o"
+                            id="scrubIdx">01</span> / 04</span></div>
+                <div class="scrub-bar"><i id="scrubBar"></i></div>
+            </div>
+        </section>
+
+        <!-- ██ 03 / SERVICES ██ -->
+        <section id="services" class="sec">
+            <div class="container">
+                <header class="sec-head" data-reveal>
+                    <div class="sec-meta"><span class="o">03/</span> WHAT I DO</div>
+                    <h2 class="sec-title" id="servicesTitle">SERVICES</h2>
+                    <p class="sec-sub" id="servicesSub"></p>
+                    <p class="sec-text" id="servicesText"></p>
+                </header>
+                <div id="serviceList"></div>
+            </div>
+        </section>
+
+        <!-- ██ 04 / ABOUT — operator profile! ██ -->
+        <section id="about" class="sec">
+            <div class="container">
+                <header class="sec-head" data-reveal>
+                    <div class="sec-meta"><span class="o">04/</span> THE OPERATOR</div>
+                    <h2 class="sec-title" id="aboutTitle">ABOUT</h2>
+                    <p class="sec-sub" id="aboutSub"></p>
+                </header>
+                <div class="about-grid">
+                    <figure class="about-fig brk" data-reveal>
+                        <img id="aboutImg" src="https://picsum.photos/seed/about-operator/900/1100.jpg"
+                            alt="Black and white photo of the operator">
+                        <figcaption class="fig-cap"><span>FIG.01 — THE OPERATOR</span><span>IRN / TEHRAN</span>
+                        </figcaption>
+                    </figure>
+                    <div class="about-body">
+                        <p class="about-p" id="aboutText" data-reveal></p>
+                        <div class="about-bio" id="aboutBio" data-reveal style="--d:.08s"></div>
+                        <div class="about-pull" data-reveal style="--d:.14s">I DON'T SELL HOURS.<br>I SHIP OUTCOMES.
+                        </div>
+                        <div class="discipline" data-reveal style="--d:.2s">
+                            <div class="hazard" aria-hidden="true"></div>
+                            <div class="dz-head"><span>DAILY DISCIPLINE</span><span class="o">NON-NEGOTIABLE</span>
+                            </div>
+                            <ul>
+                                <li><span class="t">05:30</span><span>WAKE UP. NO SNOOZE.</span></li>
+                                <li><span class="t">06:00</span><span>TRAIN — IRON &amp; IRON ONLY</span></li>
+                                <li><span class="t">09:00</span><span>DEEP WORK / DJANGO &amp; SERVERS</span></li>
+                                <li><span class="t">14:00</span><span>SHIP. REVIEW. REFACTOR.</span></li>
+                                <li><span class="t">22:30</span><span>SLEEP. REPEAT.</span></li>
+                            </ul>
+                        </div>
+                        <div class="toolbox" data-reveal style="--d:.26s">
+                            <div class="tb-label">TOOLBOX — <span class="o">FULL STACK</span></div>
+                            <div class="tb-chips" id="toolbox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ██ 05 / WORKS — transformation stories (projects) ██ -->
+        <section id="work" class="sec">
+            <div class="works-bglayer" id="worksBg" aria-hidden="true"><img id="worksBgImg" alt=""></div>
+            <div class="container">
+                <header class="sec-head" data-reveal>
+                    <div class="sec-meta"><span class="o">05/</span> SELECTED WORK</div>
+                    <h2 class="sec-title" id="worksTitle">WORKS</h2>
+                    <p class="sec-sub" id="worksSub"></p>
+                    <p class="sec-text" id="worksText"></p>
+                </header>
+                <div class="tabs" data-reveal>
+                    <button class="tab active" data-tab="development" id="tabDev"></button>
+                    <button class="tab" data-tab="wordpress" id="tabWp"></button>
+                    <div class="tab-stat"><span class="num" id="wpStatNum">00</span><span class="lbl"
+                            id="wpStatLbl"></span></div>
+                </div>
+                <div class="works-list" id="workList"></div>
+            </div>
+        </section>
+
+        <!-- ██ 06 / CERTIFICATES — professional credentials ██ -->
+        <section id="certificates" class="sec">
+            <div class="container">
+                <header class="sec-head" data-reveal>
+                    <div class="sec-meta"><span class="o">06/</span> PROOF OF WORK</div>
+                    <h2 class="sec-title" id="certTitle">CERTIFICATES</h2>
+                    <p class="sec-sub" id="certSub"></p>
+                    <p class="sec-text" id="certText"></p>
+                </header>
+                <div class="cert-grid">
+                    <div id="certList"></div>
+                    <aside class="cert-preview" data-reveal>
+                        <div class="cp-frame brk"><img id="cpImg" alt="certificate preview"></div>
+                        <div class="cp-meta"><span id="cpTitle">—</span><span class="o">VERIFIED</span></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Silver ticker 2 (marquee_summary_2) -->
+        <div class="marquee mq-silver" id="mq2" style="--dur:24s"></div>
+
+        <!-- ██ 07 / ETHOS — closing quote (contact_summary_quote — HTML allowed) ██ -->
+        <section id="ethos">
+            <div class="q-water" aria-hidden="true">DISCIPLINE</div>
+            <div class="q-in">
+                <div class="q-kicker"><span class="o">07/</span> ETHOS</div>
+                <div id="quoteLines"></div>
+            </div>
+        </section>
+
+        <!-- Orange ticker 3 (marquee_contact) -->
+        <div class="hazard" aria-hidden="true"></div>
+        <div class="marquee mq-orange reverse" id="mq3" style="--dur:26s"></div>
+
+        <!-- ██ 08 / CONTACT — final CTA ("book a trial class") ██ -->
+        <section id="contact" class="sec">
+            <div class="container">
+                <header class="sec-head" data-reveal>
+                    <div class="sec-meta"><span class="o">08/</span> FINAL SET</div>
+                    <h2 class="sec-title" id="contactTitle">CONTACT</h2>
+                    <p class="sec-sub" id="contactSub"></p>
+                    <p class="sec-text" id="contactText"></p>
+                </header>
+                <div class="contact-grid">
+                    <div class="c-left">
+                        <div class="status" data-reveal><span class="dot"></span><span>STATUS — OPEN FOR NEW
+                                PROJECTS</span></div>
+                        <div class="contact-block" data-reveal style="--d:.08s">
+                            <div class="contact-label" id="lblEmail">E-MAIL</div>
+                            <div class="email-row">
+                                <a class="c-email" id="emailLink" href="#"><span id="emailTxt"></span></a>
+                                <button class="c-copy" id="copyEmail" aria-label="copy email address"><i
+                                        data-lucide="copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="contact-block" data-reveal style="--d:.14s">
+                            <div class="contact-label" id="lblPhone">PHONE</div>
+                            <a class="c-phone" id="phoneLink" href="#"><span id="phoneTxt"></span></a>
+                        </div>
+                        <div class="contact-block" data-reveal style="--d:.2s">
+                            <div class="local-time" id="localTime">—</div>
+                        </div>
+                    </div>
+                    <div class="c-right" data-reveal style="--d:.12s">
+                        <div class="contact-label" id="lblSocial">SOCIAL MEDIA</div>
+                        <div id="socialList"></div>
+                    </div>
+                </div>
+                <div class="cta-row" data-reveal>
+                    <a class="btn btn-primary btn-big magnetic" id="ctaBig" href="#">START A PROJECT <i
+                            data-lucide="arrow-up-right"></i></a>
+                    <span class="cta-note">REPLY WITHIN 24H — USUALLY FASTER</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-in">
+            <span id="footBrand">© 2025</span>
+            <span>DESIGNED &amp; BUILT IN-HOUSE — RUNNING ON DJANGO</span>
+            <button id="toTop">BACK TO TOP <i data-lucide="arrow-up"></i></button>
+        </div>
+    </footer>
+
+    <!-- Project preview card that follows the mouse -->
+    <div id="workCursor" aria-hidden="true">
+        <div class="wc-in"><img id="wcImg" alt=""><span class="wc-tag" id="wcTag">VIEW</span></div>
+    </div>
+
+    <!-- Project / certificate detail modal -->
+    <div id="modal" role="dialog" aria-modal="true">
+        <div class="m-overlay"></div>
+        <div class="m-panel">
+            <button class="m-close" id="mClose" aria-label="close"><i data-lucide="x"></i></button>
+            <div id="mBody"></div>
+        </div>
+    </div>
+
+    <div id="toast"><i data-lucide="check"></i><span></span></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
