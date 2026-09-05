@@ -1,6 +1,6 @@
 const SITE_DATA = {
     settings: {
-        hero_title: "ARYA KARIMI",
+        hero_title: "SOHEIL AHMADI",
         hero_subtitle: "NO BUGS FOUND",
         hero_text: "Full-Stack developer with a powerlifter's mindset. Six years of shipping Django back-ends, WordPress builds and interfaces that don't flinch under load. Trained to ship. Built to last.",
         hero_audio: "",
@@ -16,7 +16,7 @@ const SITE_DATA = {
         services_text: "No agencies. No handoffs. No excuses. One operator who designs the system, writes the code, deploys it — and stays for the maintenance. Pick your program below.",
         about_title: "ABOUT",
         about_subtitle: "Train like an athlete. Code like a pro.",
-        about_text: "I'm Arya — a full-stack developer from Tehran who treats every project like competition prep: plan, execute, measure, repeat.",
+        about_text: "I'm Soheil � a full-stack developer from Tehran who treats every project like competition prep: plan, execute, measure, repeat.",
         about_bio_text: "Six years ago I wrote my first line of Python between training sessions. Today I architect and ship production systems — Django back-ends, WordPress platforms and the front-ends on top — for founders and studios who need one reliable operator instead of a committee.\n\nMy rule is simple: whatever leaves my keyboard must survive real traffic, real deadlines and real users. Clean architecture, honest estimates, documented handovers.\n\nOff the keyboard: 5:30 alarms, barbells, black coffee and a permanently open terminal.",
         works_title: "WORKS",
         works_subtitle: "Selected work — proof, not promises",
@@ -36,13 +36,13 @@ const SITE_DATA = {
         contact_subtitle: "The barbell is optional. The deadline isn't.",
         contact_text: "A system to build, a WordPress site to rescue, or an API that needs a coach? Send the brief. You'll hear back within 24 hours — honest about scope, price and what it takes.",
         contact_email_label: "E-MAIL", contact_phone_label: "PHONE", contact_social_label: "SOCIAL MEDIA",
-        email: "hello@aryakarimi.dev", phone: "+98 912 345 6789"
+        email: "hello@soheil-ahmadi.dev", phone: "+98 912 345 6789"
     },
     social_links: [
-        { name: "GitHub", url: "https://github.com/aryakarimi" },
-        { name: "LinkedIn", url: "https://www.linkedin.com/in/aryakarimi" },
-        { name: "Telegram", url: "https://t.me/aryakarimi" },
-        { name: "Instagram", url: "https://instagram.com/aryakarimi.dev" }
+        { name: "GitHub", url: "https://github.com/soheil-ahmadi" },
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/soheil-ahmadi" },
+        { name: "Telegram", url: "https://t.me/soheil-ahmadi" },
+        { name: "Instagram", url: "https://instagram.com/soheil-ahmadi.dev" }
     ],
     services: [
         { title: "Back-End Engineering", description: "Django & DRF systems designed like training programs: progressive, measurable, overload-proof. Clean models, fat tests, zero spaghetti — from auth to async workers.", tags: "Python, Django, DRF, PostgreSQL, Redis, Celery" },
@@ -54,12 +54,12 @@ const SITE_DATA = {
     technologies: ["Python", "Django", "DRF", "PostgreSQL", "Redis", "Celery", "JavaScript", "Vue", "GSAP", "Tailwind", "Docker", "Nginx", "WordPress", "WooCommerce", "PHP", "Linux"],
     projects: [
         { category: "development", name: "HELIOS ANALYTICS", href: "", image: "https://picsum.photos/seed/helios-dashboard/1200/800.jpg", bg_image: "https://picsum.photos/seed/helios-bg/1600/900.jpg", technologies: ["Django", "DRF", "Celery", "PostgreSQL", "Redis"] },
-        { category: "development", name: "PULSE GYM CORE", href: "https://github.com/aryakarimi", image: "https://picsum.photos/seed/pulse-gym/1200/800.jpg", bg_image: "https://picsum.photos/seed/pulse-bg/1600/900.jpg", technologies: ["Django", "Vue", "JWT", "Docker"] },
+        { category: "development", name: "PULSE GYM CORE", href: "https://github.com/soheil-ahmadi", image: "https://picsum.photos/seed/pulse-gym/1200/800.jpg", bg_image: "https://picsum.photos/seed/pulse-bg/1600/900.jpg", technologies: ["Django", "Vue", "JWT", "Docker"] },
         { category: "development", name: "VAKHT SCHEDULING API", href: "", image: "https://picsum.photos/seed/vakht-api/1200/800.jpg", bg_image: "", technologies: ["Django", "DRF", "PostgreSQL", "Redis"] },
         { category: "development", name: "LEDGER INVENTORY", href: "", image: "https://picsum.photos/seed/ledger-stock/1200/800.jpg", bg_image: "", technologies: ["Django", "Celery", "ReportLab", "PostgreSQL"] },
         { category: "wordpress", name: "CAFE NOIR — SHOP", href: "", image: "https://picsum.photos/seed/cafe-noir/1200/800.jpg", bg_image: "https://picsum.photos/seed/cafe-bg/1600/900.jpg", technologies: ["WooCommerce", "ACF", "Custom Theme"] },
         { category: "wordpress", name: "CLINIC AVA", href: "", image: "https://picsum.photos/seed/clinic-ava/1200/800.jpg", bg_image: "", technologies: ["Custom Theme", "ACF", "SEO"] },
-        { category: "wordpress", name: "STUDIO FRAME", href: "https://www.behance.net/aryakarimi", image: "https://picsum.photos/seed/studio-frame/1200/800.jpg", bg_image: "", technologies: ["Custom Theme", "GSAP", "Headless"] },
+        { category: "wordpress", name: "STUDIO FRAME", href: "https://www.behance.net/soheil-ahmadi", image: "https://picsum.photos/seed/studio-frame/1200/800.jpg", bg_image: "", technologies: ["Custom Theme", "GSAP", "Headless"] },
         { category: "wordpress", name: "ATR BOOKSHOP", href: "", image: "https://picsum.photos/seed/atr-books/1200/800.jpg", bg_image: "", technologies: ["WooCommerce", "Persian RTL", "Custom Theme"] },
         { category: "wordpress", name: "MOTO GARAGE", href: "", image: "https://picsum.photos/seed/moto-garage/1200/800.jpg", bg_image: "", technologies: ["Custom Theme", "ACF", "Speed Tuning"] }
     ],
@@ -85,7 +85,7 @@ const icons = () => { if (window.lucide) lucide.createIcons(); };
 const YEAR = new Date().getFullYear();
 document.title = `${S.hero_title} — ${S.hero_subtitle}`;
 
-/* ═══ Render: navigation ═══ */
+/* ╝╝╝ Render: navigation ╝╝╝ */
 (function renderNav() {
     const navLinks = [
         ['#home', S.nav_home], ['#services', S.nav_services], ['#about', S.nav_about],
@@ -110,7 +110,7 @@ document.title = `${S.hero_title} — ${S.hero_subtitle}`;
     <span>${DATA.social_links.map(sl => `<a href="${esc(sl.url)}" target="_blank" rel="noopener">${esc(sl.name.toUpperCase())}</a>`).join(' &nbsp;/&nbsp; ')}</span>`;
 })();
 
-/* ═══ Render: HERO ═══ */
+/* ╝╝╝ Render: HERO ╝╝╝ */
 (function renderHero() {
     const parts = S.hero_title.trim().split(/\s+/);
     const l1 = parts[0] || '';
@@ -135,7 +135,7 @@ document.title = `${S.hero_title} — ${S.hero_subtitle}`;
     </div>`).join('');
 })();
 
-/* ═══ Render: tickers (pipe separator) ═══ */
+/* ╝╝╝ Render: tickers (pipe separator) ╝╝╝ */
 function buildMarquee(el, raw) {
     const items = String(raw || '').split('|').map(s => s.trim()).filter(Boolean);
     if (!items.length) { el.remove(); return; }
@@ -147,7 +147,7 @@ buildMarquee($('#mq1'), S.marquee_summary_1);
 buildMarquee($('#mq2'), S.marquee_summary_2);
 buildMarquee($('#mq3'), S.marquee_contact);
 
-/* ═══ Render: METHOD section (scroll-driven words) ═══ */
+/* ╝╝╝ Render: METHOD section (scroll-driven words) ╝╝╝ */
 const stagesData = [
     { cap: 'PHASE 01 — PLAN', lines: [[S.service_sum_1, 'w']] },
     { cap: 'PHASE 02 — BUILD', lines: [[S.service_sum_2a, 'w'], [S.service_sum_2b, 'outl']] },
@@ -157,7 +157,7 @@ const stagesData = [
 $('#stages').innerHTML = stagesData.map(st =>
     `<div class="stage">${st.lines.map(([t, c]) => `<span class="sw ${c}"><span>${esc(t)}</span></span>`).join('')}</div>`).join('');
 
-/* ═══ Render: SERVICES ═══ */
+/* ╝╝╝ Render: SERVICES ╝╝╝ */
 $('#servicesTitle').textContent = S.services_title;
 $('#servicesSub').textContent = S.services_subtitle;
 $('#servicesText').textContent = S.services_text;
@@ -181,14 +181,14 @@ $$('.service-row').forEach(r => r.addEventListener('click', () => {
     if (!was) r.classList.add('pin');
 }));
 
-/* ═══ Render: ABOUT ═══ */
+/* ╝╝╝ Render: ABOUT ╝╝╝ */
 $('#aboutTitle').textContent = S.about_title;
 $('#aboutSub').textContent = S.about_subtitle;
 $('#aboutText').textContent = S.about_text;
 $('#aboutBio').innerHTML = String(S.about_bio_text || '').split(/\n+/).filter(Boolean).map(p => `<p>${esc(p)}</p>`).join('');
 $('#toolbox').innerHTML = (DATA.technologies || []).map(t => `<span>${esc(t)}</span>`).join('');
 
-/* ═══ Render: WORKS ═══ */
+/* ╝╝╝ Render: WORKS ╝╝╝ */
 $('#worksTitle').textContent = S.works_title;
 $('#worksSub').textContent = S.works_subtitle;
 $('#worksText').textContent = S.works_text;
@@ -255,7 +255,7 @@ renderWorksList();
 let wcX = 0, wcY = 0, wcTX = 0, wcTY = 0, wcRot = 0;
 $('#work').addEventListener('mousemove', e => { wcTX = e.clientX; wcTY = e.clientY; });
 
-/* ═══ Render: CERTIFICATES ═══ */
+/* ╝╝╝ Render: CERTIFICATES ╝╝╝ */
 $('#certTitle').textContent = S.certificates_title;
 $('#certSub').textContent = S.certificates_subtitle;
 $('#certText').textContent = S.certificates_text;
@@ -283,14 +283,14 @@ $$('.cert-row').forEach((row, i) => {
 });
 setCertPreview(0);
 
-/* ═══ Render: ETHOS (quote — user HTML preserved) ═══ */
+/* ╝╝╝ Render: ETHOS (quote — user HTML preserved) ╝╝╝ */
 (function renderQuote() {
     const lines = String(S.contact_summary_quote || '').split(/<br\s*\/?>/i).map(s => s.trim()).filter(Boolean);
     $('#quoteLines').innerHTML = lines.map((l, i) =>
         `<div class="q-line"><span style="transition-delay:${.1 + i * .13}s">${l}</span></div>`).join('');
 })();
 
-/* ═══ Render: CONTACT ═══ */
+/* ╝╝╝ Render: CONTACT ╝╝╝ */
 $('#contactTitle').textContent = S.contact_title;
 $('#contactSub').textContent = S.contact_subtitle;
 $('#contactText').textContent = S.contact_text;
@@ -301,7 +301,7 @@ $('#emailTxt').textContent = S.email;
 $('#emailLink').href = `mailto:${S.email}`;
 $('#phoneTxt').textContent = S.phone;
 $('#phoneLink').href = `tel:${S.phone.replace(/[^+\d]/g, '')}`;
-$('#ctaBig').href = `mailto:${S.email}?subject=${encodeURIComponent('Project Inquiry — via portfolio')}&body=${encodeURIComponent('Hi Arya,\n\nProject:\nDeadline:\nBudget:\n\n—')}`;
+$('#ctaBig').href = `mailto:${S.email}?subject=${encodeURIComponent('Project Inquiry — via portfolio')}&body=${encodeURIComponent('Hi Soheil,\n\nProject:\nDeadline:\nBudget:\n\n—')}`;
 const iconFor = n => {
     n = (n || '').toLowerCase();
     return n.includes('github') ? 'github' : n.includes('linkedin') ? 'linkedin' : n.includes('telegram') ? 'send' : n.includes('instagram') ? 'instagram' : 'link';
@@ -323,7 +323,7 @@ function tick() {
 }
 setInterval(tick, 1000); tick();
 
-/* ═══ Loader ═══ */
+/* ╝╝╝ Loader ╝╝╝ */
 (function loader() {
     const num = $('#loadNum'), bar = $('#loadBar'), t0 = performance.now(), dur = 1300;
     function step(t) {
@@ -355,7 +355,7 @@ function startCounters() {
     });
 }
 
-/* ═══ Scroll reveal ═══ */
+/* ╝╝╝ Scroll reveal ╝╝╝ */
 const io = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
 }), { threshold: .12, rootMargin: '0px 0px -8% 0px' });
@@ -367,7 +367,7 @@ const ethIO = new IntersectionObserver(es => {
 }, { threshold: .35 });
 ethIO.observe($('#ethos'));
 
-/* ═══ Scrollspy + nav behavior + progress bar ═══ */
+/* ╝╝╝ Scrollspy + nav behavior + progress bar ╝╝╝ */
 const nav = $('#nav'), progressBar = $('#scrollProgress');
 let lastY = 0;
 const spyIO = new IntersectionObserver(es => es.forEach(e => {
@@ -386,7 +386,7 @@ addEventListener('scroll', () => {
     scrubUpdate();
 }, { passive: true });
 
-/* ═══ METHOD section scroll logic ═══ */
+/* ╝╝╝ METHOD section scroll logic ╝╝╝ */
 const methodSec = $('#method');
 let curStage = -1;
 function setStage(i) {
@@ -408,7 +408,7 @@ function scrubUpdate() {
 setStage(0); curStage = 0;
 addEventListener('resize', scrubUpdate);
 
-/* ═══ Modal ═══ */
+/* ╝╝╝ Modal ╝╝╝ */
 const modal = $('#modal'), mBody = $('#mBody');
 function openModal(html) {
     mBody.innerHTML = html;
@@ -454,7 +454,7 @@ function openCertModal(i) {
     </div>`);
 }
 
-/* ═══ Toast + email copy ═══ */
+/* ╝╝╝ Toast + email copy ╝╝╝ */
 const toastEl = $('#toast'); let toastT;
 function toast(msg) {
     toastEl.querySelector('span').textContent = msg;
@@ -479,7 +479,7 @@ $('#copyEmail').addEventListener('click', async () => {
     setTimeout(() => { b.innerHTML = '<i data-lucide="copy"></i>'; icons(); }, 1600);
 });
 
-/* ═══ Mobile menu ═══ */
+/* ╝╝╝ Mobile menu ╝╝╝ */
 const mm = $('#mobileMenu');
 function mmToggle(open) {
     mm.classList.toggle('open', open);
@@ -496,7 +496,7 @@ document.addEventListener('click', e => {
     else if (!e.target.closest('.ns-panel')) ns.classList.remove('open');
 });
 
-/* ═══ Magnetic buttons ═══ */
+/* ╝╝╝ Magnetic buttons ╝╝╝ */
 $$('.magnetic').forEach(btn => {
     btn.addEventListener('mousemove', e => {
         const r = btn.getBoundingClientRect();
@@ -507,7 +507,7 @@ $$('.magnetic').forEach(btn => {
 });
 $('#toTop').addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
 
-/* ═══ Custom cursor + shared rAF loop ═══ */
+/* ╝╝╝ Custom cursor + shared rAF loop ╝╝╝ */
 const finePointer = matchMedia('(pointer:fine)').matches;
 const dot = $('#cursorDot'), ring = $('#cursorRing');
 let cx = innerWidth / 2, cy = innerHeight / 2, rx = cx, ry = cy;
