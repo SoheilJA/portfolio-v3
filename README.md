@@ -2,7 +2,7 @@
 
 A high-performance, single-page portfolio for a full-stack developer. Built with semantic HTML, modern CSS, and vanilla JavaScript. Designed to feel like a club identity: pure black, neon orange, and metallic silver.
 
-![Portfolio Screenshot]() <!-- Replace with your screenshot link -->
+![Portfolio Screenshot](img/Screenshot.png)
 
 ## Features
 
