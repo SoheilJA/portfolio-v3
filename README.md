@@ -1,4 +1,4 @@
-# Soheil Ahmadi — Portfolio
+# Soheil JalalAhmadi — Portfolio
 
 A high-performance, single-page portfolio for a full-stack developer. Built with semantic HTML, modern CSS, and vanilla JavaScript. Designed to feel like a club identity: pure black, neon orange, and metallic silver.
 
@@ -15,6 +15,7 @@ A high-performance, single-page portfolio for a full-stack developer. Built with
 - **Sound toggle** — optional ambient audio using Web Audio API
 - **Fully responsive** — mobile-first with dedicated full-screen menu
 - **Django-ready data injection** — replace `SITE_DATA` with JSON from Django
+- **Live demo** — [soheilja.github.io/portfolio-v3](https://soheilja.github.io/portfolio-v3/)
 
 ## Tech Stack
 
@@ -40,7 +41,7 @@ portfolio-v3/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/soheil-ahmadi/portfolio-v3.git
+    git clone https://github.com/soheilja/portfolio-v3.git
    ```
 
 2. Open `index.html` in your browser. No build step required.
@@ -60,4 +61,4 @@ MIT License — feel free to use this template for your own portfolio.
 
 ## Contact
 
-Soheil Ahmadi — [@soheil-ahmadi](https://github.com/soheil-ahmadi)
+Soheil JalalAhmadi — [@soheilja](https://github.com/soheilja) · [soheil-ja.ir](http://soheil-ja.ir)
