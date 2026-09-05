@@ -1,3 +1,144 @@
+const TRANSLATIONS = {
+    en: {
+        hero_title: "SOHEIL AHMADI",
+        hero_subtitle: "NO BUGS FOUND",
+        hero_text: "Full-Stack developer with a powerlifter's mindset. Six years of shipping Django back-ends, WordPress builds and interfaces that don't flinch under load. Trained to ship. Built to last.",
+        nav_home: "HOME", nav_services: "SERVICES", nav_about: "ABOUT", nav_work: "WORK",
+        nav_certificates: "CERTIFICATES", nav_contact: "CONTACT",
+        nav_email_label: "E-MAIL", nav_social_label: "SOCIAL",
+        service_sum_1: "ARCHITECTURE",
+        service_sum_2a: "DEVELOPMENT", service_sum_2b: "DEPLOYMENT",
+        service_sum_3a: "APIS", service_sum_3b: "FRONTENDS", service_sum_3c: "SCALABILITY",
+        service_sum_4: "DATABASES",
+        services_title: "SERVICES",
+        services_subtitle: "Everything between idea and production",
+        services_text: "No agencies. No handoffs. No excuses. One operator who designs the system, writes the code, deploys it — and stays for the maintenance. Pick your program below.",
+        about_title: "ABOUT",
+        about_subtitle: "Train like an athlete. Code like a pro.",
+        about_text: "I'm Soheil — a full-stack developer from Mashhad who treats every project like competition prep: plan, execute, measure, repeat.",
+        about_bio_text: "Six years ago I wrote my first line of Python between training sessions. Today I architect and ship production systems — Django back-ends, WordPress platforms and the front-ends on top — for founders and studios who need one reliable operator instead of a committee.\n\nMy rule is simple: whatever leaves my keyboard must survive real traffic, real deadlines and real users. Clean architecture, honest estimates, documented handovers.\n\nOff the keyboard: 5:30 alarms, barbells, black coffee and a permanently open terminal.",
+        works_title: "WORKS",
+        works_subtitle: "Selected work — proof, not promises",
+        works_text: "A cut of what I've built. Hover to preview, click for the full breakdown. Some client work sits under NDA — ask me about it over coffee.",
+        tab_dev: "Development", tab_wp: "WordPress",
+        wp_stat_text: "WordPress sites built and shipped",
+        certificates_title: "CERTIFICATES",
+        certificates_subtitle: "Proof of work — verifiable",
+        certificates_text: "Papers don't write code, but these show I did the reps. Hover to preview, click any certificate to view it full-size and verify it with the issuer.",
+        cert_verify_label: "View & Verify",
+        cert_image_alt: "Certificate",
+        contact_summary_quote: 'NO SHORTCUTS.<br>NO EXCUSES.<span> JUST SHIP.</span>',
+        marquee_summary_1: "FULL-STACK DEVELOPER|DJANGO|WORDPRESS|REST APIS|DEPLOYMENT|SINCE 2019",
+        marquee_summary_2: "TRAIN HARD|SHIP HARD|REVIEW|REFACTOR|REPEAT|NO EXCUSES",
+        marquee_contact: "AVAILABLE FOR NEW PROJECTS|LET'S BUILD SOMETHING HEAVY|REPLY WITHIN 24H",
+        contact_title: "CONTACT",
+        contact_subtitle: "The barbell is optional. The deadline isn't.",
+        contact_text: "A system to build, a WordPress site to rescue, or an API that needs a coach? Send the brief. You'll hear back within 24 hours — honest about scope, price and what it takes.",
+        contact_email_label: "E-MAIL", contact_phone_label: "PHONE", contact_social_label: "SOCIAL MEDIA",
+        email: "hello@soheil-ahmadi.dev", phone: "+98 912 345 6789",
+        lang_toggle: "FA",
+        sound_on: "SOUND — ON", sound_off: "SOUND — OFF",
+        loader_brand: "SOHEIL AHMADI", loader_status: "PORTFOLIO — LOADING",
+        hero_meta_prefix: "FULL-STACK DEVELOPER",
+        hero_cta_start: "START A PROJECT", hero_cta_see: "SEE THE WORK",
+        scroll_cue: "SCROLL",
+        method_sec_label: "WHAT I DO",
+        about_sec_label: "THE OPERATOR",
+        fig_cap_1: "FIG.01 — THE OPERATOR",
+        fig_cap_loc: "IRN / MASHHAD",
+        works_sec_label: "SELECTED WORK",
+        cert_sec_label: "PROOF OF WORK",
+        cert_meta_verified: "VERIFIED",
+        ethos_sec_label: "ETHOS",
+        ethos_watermark: "DISCIPLINE",
+        contact_sec_label: "FINAL SET",
+        contact_status: "STATUS — OPEN FOR NEW PROJECTS",
+        contact_cta: "START A PROJECT",
+        contact_cta_note: "REPLY WITHIN 24H — USUALLY FASTER",
+        footer_brand: "DESIGNED & BUILT IN-HOUSE — RUNNING ON DJANGO",
+        footer_to_top: "BACK TO TOP",
+        discipline_head: "DAILY DISCIPLINE", discipline_sub: "NON-NEGOTIABLE",
+        toolbox_label: "TOOLBOX — FULL STACK",
+        about_pull: "I DON'T SELL HOURS.<br>I SHIP OUTCOMES.",
+        local_time_prefix: "TEHRAN — ",
+        local_time_suffix: " / GMT+3:30",
+        email_copied: "EMAIL COPIED TO CLIPBOARD",
+        social_github: "GitHub", social_linkedin: "LinkedIn", social_telegram: "Telegram", social_instagram: "Instagram",
+        modal_visit: "VISIT PROJECT", modal_private: "PRIVATE CLIENT BUILD — FULL CASE STUDY ON REQUEST",
+        modal_verify: "VERIFY WITH ISSUER", modal_self_hosted: "SELF-HOSTED DOCUMENT — VIEW ONLY",
+        hero_stage_1: "YEARS OF CODE", hero_stage_2: "PROJECTS SHIPPED", hero_stage_3: "TECHNOLOGIES", hero_stage_4: "CERTIFICATES"
+    },
+    fa: {
+        hero_title: "سهیل جلال احمدی",
+        hero_subtitle: "باگ یافت نشد",
+        hero_text: "توسعه‌دهنده فول‌استک با ذهنیت ورزشکار قدرتی. شش سال استقرار بک‌اندهای جنگو، سایت‌های وردپرس و رابط‌هایی که در بار سنگین خم نمی‌شوند. آموزش دیده‌اید تا خروجی تحویل دهید. برای ماندگاری ساخته شده.",
+        nav_home: "خانه", nav_services: "خدمات", nav_about: "درباره", nav_work: "کارها",
+        nav_certificates: "گواهی‌ها", nav_contact: "تماس",
+        nav_email_label: "ایمیل", nav_social_label: "شبکه‌های اجتماعی",
+        service_sum_1: "معماری",
+        service_sum_2a: "توسعه", service_sum_2b: "استقرار",
+        service_sum_3a: "رابط‌های برنامه‌نویسی", service_sum_3b: "فرانت‌اند", service_sum_3c: "مقیاس‌پذیری",
+        service_sum_4: "پایگاه‌های داده",
+        services_title: "خدمات",
+        services_subtitle: "همه چیز بین ایده تا تولید",
+        services_text: "نه آژانس. نه تحویل به دست دیگران. نه بهانه‌ها. یک اپراتور که سیستم را طراحی می‌کند، کد می‌نویسد، مستقر می‌کند — و برای نگهداری می‌ماند. برنامه خود را انتخاب کنید.",
+        about_title: "درباره",
+        about_subtitle: "ورزشکار처럼 کد بزنید.",
+        about_text: "من سهیل هستم — یک توسعه‌دهنده فول‌استک از مشهد که هر پروژه را مانند آماده‌سازی برای مسابقه مدیریت می‌کند: برنامه‌ریزی، اجرا، اندازه‌گیری، تکرار.",
+        about_bio_text: "شش سال پیش اولین خط پایتونم را بین جلسات تمرین نوشتم. امروز سیستم‌های تولید را معماری و استقرار می‌دهم — بک‌اندهای جنگو، پلتفرم‌های وردپرس و فرانت‌اندهای روی آن — برای بنیان‌گذاران و استودیوهایی که به جای یک کمیته به یک اپراتور قابل اعتماد نیاز دارند.\n\nقانون من ساده است: هر چیزی که از صفحه کلیدم خارج می‌شود باید ترافیک واقعی، ددلاین‌های واقعی و کاربران واقعی را تحمل کند. معماری تمیز، برآوردهای صادقانه، تحویل‌های مستند.\n\nخارج از صفحه کلید: زنگ‌های 5:30، دمبل، قهوه سیاه و یک ترمینال همیشه باز.",
+        works_title: "کارها",
+        works_subtitle: "کار برگزیده — اثبات، نه وعده",
+        works_text: "بخشی از آنچه ساخته‌ام. هاور کنید برای پیش‌نمایش، کلیک کنید برای توضیح کامل. برخی کارهای مشتری تحت NDA است — در مورد آن با من در مورد قهوه صحبت کنید.",
+        tab_dev: "توسعه", tab_wp: "وردپرس",
+        wp_stat_text: "سایت‌های وردپرس ساخته و استقرار داده شده",
+        certificates_title: "گواهی‌ها",
+        certificates_subtitle: "اثبات کار — قابل تأیید",
+        certificates_text: "کاغذها کد نمی‌نویسند، اما این‌ها نشان می‌دهند که من تمرینات را انجام داده‌ام. هاور کنید برای پیش‌نمایش، روی هر گواهی کلیک کنید تا به اندازه کامل مشاهده و با صادرکننده تأیید شود.",
+        cert_verify_label: "مشاهده و تأیید",
+        cert_image_alt: "گواهی",
+        contact_summary_quote: 'نه میانبر.<br>نه بهانه.<span> فقط تحویل دهید.</span>',
+        marquee_summary_1: "توسعه‌دهنده فول‌استک|جنگو|وردپرس|رابط‌های REST|استقرار|از سال ۲۰۱۹",
+        marquee_summary_2: "سخت تمرین|سخت تحویل|بررسی|بازنویسی|تکرار|نه بهانه",
+        marquee_contact: "برای پروژه‌های جدید موجود هستم|بیایید چیزی سنگین بسازیم|پاسخ در عرض ۲۴ ساعت",
+        contact_title: "تماس",
+        contact_subtitle: "دمبل اختیاری است. ددلاین نیست.",
+        contact_text: "سیستی برای ساخت، یک سایت وردپرس برای نجات، یا یک API که به مربی نیاز دارد؟ خلاصه را بفرستید. در عرض ۲۴ ساعت پاسخ می‌دهید — صادقانه در مورد محدوده، قیمت و آنچه لازم است.",
+        contact_email_label: "ایمیل", contact_phone_label: "تلفن", contact_social_label: "شبکه‌های اجتماعی",
+        email: "hello@soheil-ahmadi.dev", phone: "+98 912 345 6789",
+        lang_toggle: "EN",
+        sound_on: "صدا — روشن", sound_off: "صدا — خاموش",
+        loader_brand: "سهیل جلال احمدی", loader_status: "پورتفولیو — در حال بارگذاری",
+        hero_meta_prefix: "توسعه‌دهنده فول‌استک",
+        hero_cta_start: "شروع پروژه", hero_cta_see: "مشاهده کارها",
+        scroll_cue: "اسکرول",
+        method_sec_label: "خدمات من",
+        about_sec_label: "اپراتور",
+        fig_cap_1: "شکل ۰۱ — اپراتور",
+        fig_cap_loc: "ایران / مشهد",
+        works_sec_label: "کار برگزیده",
+        cert_sec_label: "اثبات کار",
+        cert_meta_verified: "تأیید شده",
+        ethos_sec_label: "هیکس",
+        ethos_watermark: "انضباط",
+        contact_sec_label: "تماس نهایی",
+        contact_status: "وضعیت — برای پروژه‌های جدید باز هستم",
+        contact_cta: "شروع پروژه",
+        contact_cta_note: "پاسخ در عرض ۲۴ ساعت — معمولاً سریع‌تر",
+        footer_brand: "طراحی و ساخته شده درون سازمانی — اجرا شده بر روی جنگو",
+        footer_to_top: "بازگشت به بالا",
+        discipline_head: "انضباط روزانه", discipline_sub: "قابل چاره نیست",
+        toolbox_label: "جعبه ابزار — فول استک",
+        about_pull: "من ساعت نمی‌فروشم.<br>نتیجه تحویل می‌دهم.",
+        local_time_prefix: "تهران — ",
+        local_time_suffix: " / GMT+3:30",
+        email_copied: "ایمیل در کلیپبورد کپی شد",
+        social_github: "گیت‌هاب", social_linkedin: "لینکداین", social_telegram: "تلگرام", social_instagram: "اینستاگرام",
+        modal_visit: "مشاهده پروژه", modal_private: "ساخت خصوصی مشتری — مطالعه مورد کامل درخواست",
+        modal_verify: "تأیید با صادرکننده", modal_self_hosted: "سند میزبانی شده — فقط مشاهده",
+        hero_stage_1: "سال کد", hero_stage_2: "پروژه تحویل داده شده", hero_stage_3: "فناوری", hero_stage_4: "گواهی"
+    }
+};
+
 const SITE_DATA = {
     settings: {
         hero_title: "SOHEIL AHMADI",
@@ -16,7 +157,8 @@ const SITE_DATA = {
         services_text: "No agencies. No handoffs. No excuses. One operator who designs the system, writes the code, deploys it — and stays for the maintenance. Pick your program below.",
         about_title: "ABOUT",
         about_subtitle: "Train like an athlete. Code like a pro.",
-        about_text: "I'm Soheil — a full-stack developer from Mashhad who treats every project like competition prep: plan, execute, measure, repeat.", about_bio_text: "Six years ago I wrote my first line of Python between training sessions. Today I architect and ship production systems — Django back-ends, WordPress platforms and the front-ends on top — for founders and studios who need one reliable operator instead of a committee.\n\nMy rule is simple: whatever leaves my keyboard must survive real traffic, real deadlines and real users. Clean architecture, honest estimates, documented handovers.\n\nOff the keyboard: 5:30 alarms, barbells, black coffee and a permanently open terminal.",
+        about_text: "I'm Soheil — a full-stack developer from Mashhad who treats every project like competition prep: plan, execute, measure, repeat.",
+        about_bio_text: "Six years ago I wrote my first line of Python between training sessions. Today I architect and ship production systems — Django back-ends, WordPress platforms and the front-ends on top — for founders and studios who need one reliable operator instead of a committee.\n\nMy rule is simple: whatever leaves my keyboard must survive real traffic, real deadlines and real users. Clean architecture, honest estimates, documented handovers.\n\nOff the keyboard: 5:30 alarms, barbells, black coffee and a permanently open terminal.",
         works_title: "WORKS",
         works_subtitle: "Selected work — proof, not promises",
         works_text: "A cut of what I've built. Hover to preview, click for the full breakdown. Some client work sits under NDA — ask me about it over coffee.",
@@ -38,7 +180,7 @@ const SITE_DATA = {
         email: "hello@soheil-ahmadi.dev", phone: "+98 912 345 6789"
     },
     social_links: [
-        { name: "GitHub", url: "https://github.com/soheil-ahmadi" },
+        { name: "GitHub", url: "https://github.com/soheilja" },
         { name: "LinkedIn", url: "https://www.linkedin.com/in/soheil-ahmadi" },
         { name: "Telegram", url: "https://t.me/soheil-ahmadi" },
         { name: "Instagram", url: "https://instagram.com/soheil-ahmadi.dev" }
@@ -76,6 +218,32 @@ const injectedNode = document.querySelector('script#site-data[type="application/
 const DATA = (injectedNode && injectedNode.textContent.trim()) ? JSON.parse(injectedNode.textContent) : SITE_DATA;
 const S = DATA.settings;
 
+let currentLang = 'en';
+const L = TRANSLATIONS[currentLang];
+
+function setLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
+    document.body.classList.toggle('lang-fa', lang === 'fa');
+    localStorage.setItem('portfolio-lang', lang);
+    $('#lBrand').textContent = t('loader_brand').toUpperCase();
+    const loaderStatus = document.querySelector('#loader .l-top span:last-child');
+    if (loaderStatus) loaderStatus.textContent = t('loader_status');
+    $('#langToggle')?.classList.toggle('active', lang === 'fa');
+    $('#langToggleMobile')?.classList.toggle('active', lang === 'fa');
+    renderAll();
+}
+
+function t(key) {
+    return TRANSLATIONS[currentLang]?.[key] || TRANSLATIONS['en'][key] || key;
+}
+
+function escFa(s) {
+    if (currentLang !== 'fa') return esc(s);
+    return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
 /* ---------- Utilities ---------- */
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
@@ -87,50 +255,54 @@ document.title = `${S.hero_title} — ${S.hero_subtitle}`;
 /* ╝╝╝ Render: navigation ╝╝╝ */
 (function renderNav() {
     const navLinks = [
-        ['#home', S.nav_home], ['#services', S.nav_services], ['#about', S.nav_about],
-        ['#work', S.nav_work], ['#certificates', S.nav_certificates], ['#contact', S.nav_contact]
+        ['#home', t('nav_home')], ['#services', t('nav_services')], ['#about', t('nav_about')],
+        ['#work', t('nav_work')], ['#certificates', t('nav_certificates')], ['#contact', t('nav_contact')]
     ];
-    const initials = S.hero_title.trim().split(/\s+/).map(w => w[0] || '').join('').toUpperCase();
+    const initials = t('hero_title').trim().split(/\s+/).map(w => w[0] || '').join('').toUpperCase();
     $('#navLogo').innerHTML = `${initials[0] || 'A'}<span>/</span>${initials[1] || 'K'}`;
-    $('#lBrand').textContent = S.hero_title.toUpperCase();
-    $('#navLinks').innerHTML = navLinks.map(([h, t]) => `<a href="${h}" data-spy="${h.slice(1)}">${esc(t)}</a>`).join('');
-    const socials = DATA.social_links.map(sl => `<a href="${esc(sl.url)}" target="_blank" rel="noopener">${esc(sl.name.toUpperCase())}<i data-lucide="arrow-up-right"></i></a>`).join('');
+    $('#lBrand').textContent = t('hero_title').toUpperCase();
+    $('#navLinks').innerHTML = navLinks.map(([h, ttl]) => `<a href="${h}" data-spy="${h.slice(1)}">${escFa(ttl)}</a>`).join('');
+    const socials = DATA.social_links.map(sl => `<a href="${esc(sl.url)}" target="_blank" rel="noopener">${escFa(t(sl.name.toLowerCase().includes('github') ? 'social_github' : sl.name.toLowerCase().includes('linkedin') ? 'social_linkedin' : sl.name.toLowerCase().includes('telegram') ? 'social_telegram' : 'social_instagram'))}<i data-lucide="arrow-up-right"></i></a>`).join('');
     $('#navRight').innerHTML = `
-    <a class="nav-meta" href="mailto:${esc(S.email)}">${esc(S.nav_email_label)} <i data-lucide="arrow-up-right"></i></a>
+    <a class="nav-meta" href="mailto:${esc(S.email)}">${escFa(t('nav_email_label'))} <i data-lucide="arrow-up-right"></i></a>
     <div class="nav-social" id="navSocial">
-      <button id="nsBtn">${esc(S.nav_social_label)} <i data-lucide="chevron-down"></i></button>
+      <button id="nsBtn">${escFa(t('nav_social_label'))} <i data-lucide="chevron-down"></i></button>
       <div class="ns-panel">${socials}</div>
     </div>
-    <button class="burger" id="burger" aria-label="open menu"><span></span><span></span><span></span></button>`;
+    <button class="burger" id="burger" aria-label="open menu"><span></span><span></span><span></span></button>
+    <button class="lang-toggle" id="langToggle" aria-label="toggle language">${t('lang_toggle')}</button>`;
     /* Mobile menu */
-    $('#mmLinks').innerHTML = navLinks.map(([h, t], i) => `<a class="mm-link" style="transition-delay:${.08 + i * .06}s" href="${h}"><span class="mono">0${i + 1}</span>${esc(t)}</a>`).join('');
+    $('#mmLinks').innerHTML = navLinks.map(([h, ttl], i) => `<a class="mm-link" style="transition-delay:${.08 + i * .06}s" href="${h}"><span class="mono">0${i + 1}</span>${escFa(ttl)}</a>`).join('');
     $('#mmFoot').innerHTML = `
     <a href="mailto:${esc(S.email)}">${esc(S.email)}</a>
-    <span>${DATA.social_links.map(sl => `<a href="${esc(sl.url)}" target="_blank" rel="noopener">${esc(sl.name.toUpperCase())}</a>`).join(' &nbsp;/&nbsp; ')}</span>`;
+    <span>${DATA.social_links.map(sl => `<a href="${esc(sl.url)}" target="_blank" rel="noopener">${escFa(t(sl.name.toLowerCase().includes('github') ? 'social_github' : sl.name.toLowerCase().includes('linkedin') ? 'social_linkedin' : sl.name.toLowerCase().includes('telegram') ? 'social_telegram' : 'social_instagram'))}</a>`).join(' &nbsp;/&nbsp; ')}</span>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="toggle language">${t('lang_toggle')}</button>`;
+    $('#langToggle')?.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'fa' : 'en'));
+    $('#langToggleMobile')?.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'fa' : 'en'));
 })();
 
 /* ╝╝╝ Render: HERO ╝╝╝ */
 (function renderHero() {
-    const parts = S.hero_title.trim().split(/\s+/);
+    const parts = t('hero_title').trim().split(/\s+/);
     const l1 = parts[0] || '';
     const l2 = parts.slice(1).join(' ');
     $('#heroName').innerHTML =
-        `<span class="mask"><span class="l">${esc(l1)}</span></span>` +
-        (l2 ? `<span class="mask"><span class="l metal">${esc(l2)}</span></span>` : '');
-    $('#heroSub').innerHTML = `<span class="o">/</span> ${esc(S.hero_subtitle)}`;
-    $('#heroText').textContent = S.hero_text;
-    $('#hmYear').textContent = `PORTFOLIO — ${YEAR}`;
+        `<span class="mask"><span class="l">${escFa(l1)}</span></span>` +
+        (l2 ? `<span class="mask"><span class="l metal">${escFa(l2)}</span></span>` : '');
+    $('#heroSub').innerHTML = `<span class="o">/</span> ${escFa(t('hero_subtitle'))}`;
+    $('#heroText').textContent = t('hero_text');
+    $('#hmYear').textContent = `${t('hero_meta_prefix')} — ${YEAR}`;
     const techs = DATA.technologies || [];
     const stats = [
-        [6, '+', 'YEARS OF CODE'],
-        [DATA.projects.length, '+', 'PROJECTS SHIPPED'],
-        [techs.length, '', 'TECHNOLOGIES'],
-        [DATA.certificates.length, '', 'CERTIFICATES']
+        [6, '+', t('hero_stage_1')],
+        [DATA.projects.length, '+', t('hero_stage_2')],
+        [techs.length, '', t('hero_stage_3')],
+        [DATA.certificates.length, '', t('hero_stage_4')]
     ];
     $('#heroStats').innerHTML = stats.map(([v, suf, k]) => `
     <div class="stat">
-      <span class="v" data-count="${v}"><span class="n">0</span>${suf ? `<em>${suf}</em>` : ''}</span>
-      <span class="k">${k}</span>
+      <span class="v" data-count="${v}"><span class="n">0</span>${suf ? `<em>${escFa(suf)}</em>` : ''}</span>
+      <span class="k">${escFa(k)}</span>
     </div>`).join('');
 })();
 
@@ -139,27 +311,27 @@ function buildMarquee(el, raw) {
     const items = String(raw || '').split('|').map(s => s.trim()).filter(Boolean);
     if (!items.length) { el.remove(); return; }
     const seq = items.concat(items, items, items);
-    const group = `<div class="mq-g">${seq.map(t => `<span class="mq-item"><span>${esc(t)}</span><i class="dsep"></i></span>`).join('')}</div>`;
+    const group = `<div class="mq-g">${seq.map(t => `<span class="mq-item"><span>${escFa(t)}</span><i class="dsep"></i></span>`).join('')}</div>`;
     el.innerHTML = `<div class="track">${group}${group}</div>`;
 }
-buildMarquee($('#mq1'), S.marquee_summary_1);
-buildMarquee($('#mq2'), S.marquee_summary_2);
-buildMarquee($('#mq3'), S.marquee_contact);
+buildMarquee($('#mq1'), t('marquee_summary_1'));
+buildMarquee($('#mq2'), t('marquee_summary_2'));
+buildMarquee($('#mq3'), t('marquee_contact'));
 
 /* ╝╝╝ Render: METHOD section (scroll-driven words) ╝╝╝ */
 const stagesData = [
-    { cap: 'PHASE 01 — PLAN', lines: [[S.service_sum_1, 'w']] },
-    { cap: 'PHASE 02 — BUILD', lines: [[S.service_sum_2a, 'w'], [S.service_sum_2b, 'outl']] },
-    { cap: 'PHASE 03 — CONNECT', lines: [[S.service_sum_3a, 'w'], [S.service_sum_3b, 'outl'], [S.service_sum_3c, 'org']] },
-    { cap: 'PHASE 04 — STORE', lines: [[S.service_sum_4, 'w']] }
+    { cap: t('service_sum_1'), lines: [[t('service_sum_1'), 'w']] },
+    { cap: `${t('service_sum_2a')} / ${t('service_sum_2b')}`, lines: [[t('service_sum_2a'), 'w'], [t('service_sum_2b'), 'outl']] },
+    { cap: `${t('service_sum_3a')} / ${t('service_sum_3b')} / ${t('service_sum_3c')}`, lines: [[t('service_sum_3a'), 'w'], [t('service_sum_3b'), 'outl'], [t('service_sum_3c'), 'org']] },
+    { cap: t('service_sum_4'), lines: [[t('service_sum_4'), 'w']] }
 ];
 $('#stages').innerHTML = stagesData.map(st =>
     `<div class="stage">${st.lines.map(([t, c]) => `<span class="sw ${c}"><span>${esc(t)}</span></span>`).join('')}</div>`).join('');
 
 /* ╝╝╝ Render: SERVICES ╝╝╝ */
-$('#servicesTitle').textContent = S.services_title;
-$('#servicesSub').textContent = S.services_subtitle;
-$('#servicesText').textContent = S.services_text;
+$('#servicesTitle').textContent = t('services_title');
+$('#servicesSub').textContent = t('services_subtitle');
+$('#servicesText').textContent = t('services_text');
 $('#serviceList').innerHTML = DATA.services.map((sv, i) => {
     const tags = String(sv.tags || '').split(',').map(t => t.trim()).filter(Boolean);
     return `<article class="service-row" data-reveal style="--d:${i * .06}s">
@@ -181,22 +353,22 @@ $$('.service-row').forEach(r => r.addEventListener('click', () => {
 }));
 
 /* ╝╝╝ Render: ABOUT ╝╝╝ */
-$('#aboutTitle').textContent = S.about_title;
-$('#aboutSub').textContent = S.about_subtitle;
-$('#aboutText').textContent = S.about_text;
-$('#aboutBio').innerHTML = String(S.about_bio_text || '').split(/\n+/).filter(Boolean).map(p => `<p>${esc(p)}</p>`).join('');
-$('#toolbox').innerHTML = (DATA.technologies || []).map(t => `<span>${esc(t)}</span>`).join('');
+$('#aboutTitle').textContent = t('about_title');
+$('#aboutSub').textContent = t('about_subtitle');
+$('#aboutText').textContent = t('about_text');
+$('#aboutBio').innerHTML = String(t('about_bio_text') || '').split(/\n+/).filter(Boolean).map(p => `<p>${escFa(p)}</p>`).join('');
+$('#toolbox').innerHTML = (DATA.technologies || []).map(t => `<span>${escFa(t)}</span>`).join('');
 
 /* ╝╝╝ Render: WORKS ╝╝╝ */
-$('#worksTitle').textContent = S.works_title;
-$('#worksSub').textContent = S.works_subtitle;
-$('#worksText').textContent = S.works_text;
+$('#worksTitle').textContent = t('works_title');
+$('#worksSub').textContent = t('works_subtitle');
+$('#worksText').textContent = t('works_text');
 const devCount = DATA.projects.filter(p => p.category === 'development').length;
 const wpCount = DATA.projects.filter(p => p.category === 'wordpress').length;
-$('#tabDev').innerHTML = `${esc(S.tab_dev)} <span class="cnt">(${String(devCount).padStart(2, '0')})</span>`;
-$('#tabWp').innerHTML = `${esc(S.tab_wp)} <span class="cnt">(${String(wpCount).padStart(2, '0')})</span>`;
+$('#tabDev').innerHTML = `${escFa(t('tab_dev'))} <span class="cnt">(${String(devCount).padStart(2, '0')})</span>`;
+$('#tabWp').innerHTML = `${escFa(t('tab_wp'))} <span class="cnt">(${String(wpCount).padStart(2, '0')})</span>`;
 $('#wpStatNum').textContent = String(wpCount).padStart(2, '0');
-$('#wpStatLbl').textContent = S.wp_stat_text;
+$('#wpStatLbl').textContent = t('wp_stat_text');
 
 let curTab = 'development';
 const workList = $('#workList'), worksBg = $('#worksBg'), worksBgImg = $('#worksBgImg');
@@ -255,18 +427,18 @@ let wcX = 0, wcY = 0, wcTX = 0, wcTY = 0, wcRot = 0;
 $('#work').addEventListener('mousemove', e => { wcTX = e.clientX; wcTY = e.clientY; });
 
 /* ╝╝╝ Render: CERTIFICATES ╝╝╝ */
-$('#certTitle').textContent = S.certificates_title;
-$('#certSub').textContent = S.certificates_subtitle;
-$('#certText').textContent = S.certificates_text;
+$('#certTitle').textContent = t('certificates_title');
+$('#certSub').textContent = t('certificates_subtitle');
+$('#certText').textContent = t('certificates_text');
 $('#certList').innerHTML = DATA.certificates.map((c, i) => `
   <article class="cert-row" data-reveal style="--d:${i * .05}s" data-i="${i}" tabindex="0">
     <span class="c-idx">${String(i + 1).padStart(2, '0')}</span>
     <div class="c-main">
-      <h3 class="c-title">${esc(c.title)}</h3>
-      <div class="c-issuer">${esc(c.issuer)}</div>
+      <h3 class="c-title">${escFa(c.title)}</h3>
+      <div class="c-issuer">${escFa(c.issuer)}</div>
     </div>
     ${c.verify_url
-        ? `<a class="c-verify" href="${esc(c.verify_url)}" target="_blank" rel="noopener"><i data-lucide="badge-check"></i>${esc(S.cert_verify_label)}</a>`
+        ? `<a class="c-verify" href="${esc(c.verify_url)}" target="_blank" rel="noopener"><i data-lucide="badge-check"></i>${escFa(t('cert_verify_label'))}</a>`
         : `<span class="c-verify"><i data-lucide="image"></i>VIEW</span>`}
   </article>`).join('');
 function setCertPreview(i) {
@@ -284,18 +456,18 @@ setCertPreview(0);
 
 /* ╝╝╝ Render: ETHOS (quote — user HTML preserved) ╝╝╝ */
 (function renderQuote() {
-    const lines = String(S.contact_summary_quote || '').split(/<br\s*\/?>/i).map(s => s.trim()).filter(Boolean);
+    const lines = String(t('contact_summary_quote') || '').split(/<br\s*\/?>/i).map(s => s.trim()).filter(Boolean);
     $('#quoteLines').innerHTML = lines.map((l, i) =>
         `<div class="q-line"><span style="transition-delay:${.1 + i * .13}s">${l}</span></div>`).join('');
 })();
 
 /* ╝╝╝ Render: CONTACT ╝╝╝ */
-$('#contactTitle').textContent = S.contact_title;
-$('#contactSub').textContent = S.contact_subtitle;
-$('#contactText').textContent = S.contact_text;
-$('#lblEmail').textContent = S.contact_email_label;
-$('#lblPhone').textContent = S.contact_phone_label;
-$('#lblSocial').textContent = S.contact_social_label;
+$('#contactTitle').textContent = t('contact_title');
+$('#contactSub').textContent = t('contact_subtitle');
+$('#contactText').textContent = t('contact_text');
+$('#lblEmail').textContent = t('contact_email_label');
+$('#lblPhone').textContent = t('contact_phone_label');
+$('#lblSocial').textContent = t('contact_social_label');
 $('#emailTxt').textContent = S.email;
 $('#emailLink').href = `mailto:${S.email}`;
 $('#phoneTxt').textContent = S.phone;
@@ -308,16 +480,16 @@ const iconFor = n => {
 $('#socialList').innerHTML = DATA.social_links.map(sl => `
   <a class="social-row" href="${esc(sl.url)}" target="_blank" rel="noopener">
     <i data-lucide="${iconFor(sl.name)}"></i>
-    <span class="sn">${esc(sl.name.toUpperCase())}</span>
+    <span class="sn">${escFa(t(sl.name.toLowerCase().includes('github') ? 'social_github' : sl.name.toLowerCase().includes('linkedin') ? 'social_linkedin' : sl.name.toLowerCase().includes('telegram') ? 'social_telegram' : 'social_instagram'))}</span>
     <i data-lucide="arrow-up-right" class="arr"></i>
   </a>`).join('');
-$('#footBrand').textContent = `© ${YEAR} — ${S.hero_title.toUpperCase()}`;
+$('#footBrand').textContent = `${t('footer_brand')} — ${t('hero_title').toUpperCase()}`;
 
 /* ---------- Tehran local time ---------- */
 function tick() {
     try {
         const f = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Tehran', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-        $('#localTime').textContent = `TEHRAN — ${f.format(new Date())} / GMT+3:30`;
+        $('#localTime').textContent = `${t('local_time_prefix')}${f.format(new Date())}${t('local_time_suffix')}`;
     } catch (e) { $('#localTime').textContent = ''; }
 }
 setInterval(tick, 1000); tick();
@@ -422,18 +594,18 @@ addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 function openProjectModal(p) {
     const chips = p.technologies.map(t => `<span>${esc(t)}</span>`).join('');
-    const cat = p.category === 'development' ? S.tab_dev : S.tab_wp;
+    const cat = p.category === 'development' ? t('tab_dev') : t('tab_wp');
     openModal(`
     <div class="hazard" aria-hidden="true"></div>
     <div class="m-img brk"><img src="${esc(p.image)}" alt="${esc(p.name)}"></div>
     <div class="m-body">
-      <div class="m-meta"><span class="o">${esc(cat.toUpperCase())}</span><span>${p.technologies.length} TECH</span></div>
-      <h3 class="m-title">${esc(p.name)}</h3>
+      <div class="m-meta"><span class="o">${escFa(cat.toUpperCase())}</span><span>${p.technologies.length} TECH</span></div>
+      <h3 class="m-title">${escFa(p.name)}</h3>
       <div class="m-tech">${chips}</div>
       <div class="m-actions">
         ${p.href
-            ? `<a class="btn btn-primary" href="${esc(p.href)}" target="_blank" rel="noopener">VISIT PROJECT <i data-lucide="arrow-up-right"></i></a>`
-            : `<span class="m-note">PRIVATE CLIENT BUILD — FULL CASE STUDY ON REQUEST</span>`}
+            ? `<a class="btn btn-primary" href="${esc(p.href)}" target="_blank" rel="noopener">${escFa(t('modal_visit'))} <i data-lucide="arrow-up-right"></i></a>`
+            : `<span class="m-note">${escFa(t('modal_private'))}</span>`}
       </div>
     </div>`);
 }
@@ -441,14 +613,14 @@ function openCertModal(i) {
     const c = DATA.certificates[i];
     openModal(`
     <div class="hazard" aria-hidden="true"></div>
-    <div class="m-img brk"><img src="${esc(c.image)}" alt="${esc(S.cert_image_alt)}"></div>
+    <div class="m-img brk"><img src="${esc(c.image)}" alt="${esc(t('cert_image_alt'))}"></div>
     <div class="m-body">
-      <div class="m-meta"><span class="o">${esc(c.issuer)}</span><span>DOC — ${String(i + 1).padStart(2, '0')}</span></div>
-      <h3 class="m-title">${esc(c.title)}</h3>
+      <div class="m-meta"><span class="o">${escFa(c.issuer)}</span><span>DOC — ${String(i + 1).padStart(2, '0')}</span></div>
+      <h3 class="m-title">${escFa(c.title)}</h3>
       <div class="m-actions">
         ${c.verify_url
-            ? `<a class="btn btn-primary" href="${esc(c.verify_url)}" target="_blank" rel="noopener">VERIFY WITH ISSUER <i data-lucide="external-link"></i></a>`
-            : `<span class="m-note">SELF-HOSTED DOCUMENT — VIEW ONLY</span>`}
+            ? `<a class="btn btn-primary" href="${esc(c.verify_url)}" target="_blank" rel="noopener">${escFa(t('modal_verify'))} <i data-lucide="external-link"></i></a>`
+            : `<span class="m-note">${escFa(t('modal_self_hosted'))}</span>`}
       </div>
     </div>`);
 }
@@ -472,7 +644,7 @@ async function copyText(t) {
 }
 $('#copyEmail').addEventListener('click', async () => {
     await copyText(S.email);
-    toast('EMAIL COPIED TO CLIPBOARD');
+    toast(t('email_copied'));
     const b = $('#copyEmail');
     b.innerHTML = '<i data-lucide="check"></i>'; icons();
     setTimeout(() => { b.innerHTML = '<i data-lucide="copy"></i>'; icons(); }, 1600);
@@ -542,7 +714,7 @@ $('#soundBtn').addEventListener('click', async () => {
     audioOn = !audioOn;
     const btn = $('#soundBtn');
     btn.classList.toggle('on', audioOn);
-    $('#soundLbl').textContent = audioOn ? 'SOUND — ON' : 'SOUND — OFF';
+    $('#soundLbl').textContent = audioOn ? t('sound_on') : t('sound_off');
     if (S.hero_audio) {
         htmlAudio = htmlAudio || (() => { const a = new Audio(S.hero_audio); a.loop = true; a.volume = .55; return a; })();
         if (audioOn) { try { await htmlAudio.play(); } catch (e) { } } else htmlAudio.pause();
@@ -583,4 +755,91 @@ function buildSynth() {
     };
 }
 
-icons();
+/* ╝╝╝ Language toggle ╝╝╝ */
+function renderAll() {
+    renderNav();
+    renderHero();
+    buildMarquee($('#mq1'), t('marquee_summary_1'));
+    buildMarquee($('#mq2'), t('marquee_summary_2'));
+    buildMarquee($('#mq3'), t('marquee_contact'));
+    stagesData[0] = { cap: t('service_sum_1'), lines: [[t('service_sum_1'), 'w']] };
+    stagesData[1] = { cap: `${t('service_sum_2a')} / ${t('service_sum_2b')}`, lines: [[t('service_sum_2a'), 'w'], [t('service_sum_2b'), 'outl']] };
+    stagesData[2] = { cap: `${t('service_sum_3a')} / ${t('service_sum_3b')} / ${t('service_sum_3c')}`, lines: [[t('service_sum_3a'), 'w'], [t('service_sum_3b'), 'outl'], [t('service_sum_3c'), 'org']] };
+    stagesData[3] = { cap: t('service_sum_4'), lines: [[t('service_sum_4'), 'w']] };
+    $('#stages').innerHTML = stagesData.map(st =>
+        `<div class="stage">${st.lines.map(([t, c]) => `<span class="sw ${c}"><span>${escFa(t)}</span></span>`).join('')}</div>`).join('');
+    $('#servicesTitle').textContent = t('services_title');
+    $('#servicesSub').textContent = t('services_subtitle');
+    $('#servicesText').textContent = t('services_text');
+    $('#methodLabel').textContent = t('method_sec_label');
+    $('#aboutTitle').textContent = t('about_title');
+    $('#aboutSub').textContent = t('about_subtitle');
+    $('#aboutText').textContent = t('about_text');
+    $('#aboutBio').innerHTML = String(t('about_bio_text') || '').split(/\n+/).filter(Boolean).map(p => `<p>${escFa(p)}</p>`).join('');
+    $('#aboutLabel').textContent = t('about_sec_label');
+    $('#aboutPull').innerHTML = t('about_pull');
+    $('#disciplineHead').textContent = t('discipline_head');
+    $('#disciplineSub').textContent = t('discipline_sub');
+    $('#toolboxLabel').innerHTML = `${escFa(t('toolbox_label').split('—')[0] || '')} — <span class="o">${escFa((t('toolbox_label').split('—')[1] || '').trim())}</span>`;
+    $('#worksTitle').textContent = t('works_title');
+    $('#worksSub').textContent = t('works_subtitle');
+    $('#worksText').textContent = t('works_text');
+    $('#worksLabel').textContent = t('works_sec_label');
+    $('#tabDev').innerHTML = `${escFa(t('tab_dev'))} <span class="cnt">(${String(devCount).padStart(2, '0')})</span>`;
+    $('#tabWp').innerHTML = `${escFa(t('tab_wp'))} <span class="cnt">(${String(wpCount).padStart(2, '0')})</span>`;
+    $('#wpStatLbl').textContent = t('wp_stat_text');
+    icons();
+    $('#certTitle').textContent = t('certificates_title');
+    $('#certSub').textContent = t('certificates_subtitle');
+    $('#certText').textContent = t('certificates_text');
+    $('#certLabel').textContent = t('cert_sec_label');
+    $('#certList').innerHTML = DATA.certificates.map((c, i) => `
+      <article class="cert-row" data-reveal style="--d:${i * .05}s" data-i="${i}" tabindex="0">
+        <span class="c-idx">${String(i + 1).padStart(2, '0')}</span>
+        <div class="c-main">
+          <h3 class="c-title">${escFa(c.title)}</h3>
+          <div class="c-issuer">${escFa(c.issuer)}</div>
+        </div>
+        ${c.verify_url
+            ? `<a class="c-verify" href="${esc(c.verify_url)}" target="_blank" rel="noopener"><i data-lucide="badge-check"></i>${escFa(t('cert_verify_label'))}</a>`
+            : `<span class="c-verify"><i data-lucide="image"></i>VIEW</span>`}
+      </article>`).join('');
+    setCertPreview(0);
+    $('#certVerified').textContent = t('cert_meta_verified');
+    const lines = String(t('contact_summary_quote') || '').split(/<br\s*\/?>/i).map(s => s.trim()).filter(Boolean);
+    $('#quoteLines').innerHTML = lines.map((l, i) =>
+        `<div class="q-line"><span style="transition-delay:${.1 + i * .13}s">${l}</span></div>`).join('');
+    $('#ethosWatermark').textContent = t('ethos_watermark');
+    $('#ethosLabel').textContent = t('ethos_sec_label');
+    $('#contactTitle').textContent = t('contact_title');
+    $('#contactSub').textContent = t('contact_subtitle');
+    $('#contactText').textContent = t('contact_text');
+    $('#contactLabel').textContent = t('contact_sec_label');
+    $('#lblEmail').textContent = t('contact_email_label');
+    $('#lblPhone').textContent = t('contact_phone_label');
+    $('#lblSocial').textContent = t('contact_social_label');
+    $('#contactStatus').querySelector('span:last-child').textContent = t('contact_status');
+    $('#ctaBig').innerHTML = `${escFa(t('contact_cta'))} <i data-lucide="arrow-up-right"></i>`;
+    $('#ctaNote').textContent = t('contact_cta_note');
+    $('#emailTxt').textContent = S.email;
+    $('#emailLink').href = `mailto:${S.email}`;
+    $('#phoneTxt').textContent = S.phone;
+    $('#phoneLink').href = `tel:${S.phone.replace(/[^+\d]/g, '')}`;
+    $('#ctaBig').href = `mailto:${S.email}?subject=${encodeURIComponent('Project Inquiry — via portfolio')}&body=${encodeURIComponent('Hi Soheil,\n\nProject:\nDeadline:\nBudget:\n\n—')}`;
+    $('#hmPrefix').textContent = t('hero_meta_prefix');
+    $('#ctaPrimary').innerHTML = `${escFa(t('hero_cta_start'))} <i data-lucide="arrow-up-right"></i>`;
+    $('#ctaGhost').textContent = t('hero_cta_see');
+    $('#scrollCue').innerHTML = `${escFa(t('scroll_cue'))} <i data-lucide="chevron-down"></i>`;
+    $('#footBrand').textContent = `© ${YEAR} — ${t('hero_title').toUpperCase()}`;
+    $('#footTag').textContent = t('footer_brand');
+    $('#toTop').innerHTML = `${escFa(t('footer_to_top'))} <i data-lucide="arrow-up"></i>`;
+    $('#figCap').textContent = t('fig_cap_1');
+    $('#figCap01').textContent = t('fig_cap_1');
+    $('#figCapLoc').textContent = t('fig_cap_loc');
+    icons();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('portfolio-lang');
+    if (saved === 'fa' || saved === 'en') setLanguage(saved);
+});

@@ -50,30 +50,30 @@
         <section id="home">
             <div class="hero-main">
                 <div class="hero-meta h-anim" style="--hd:.05s">
-                    <span class="sq"></span><span>FULL-STACK DEVELOPER</span>
+                    <span class="sq"></span><span id="hmPrefix">FULL-STACK DEVELOPER</span>
                     <span class="rule"></span><span id="hmYear">PORTFOLIO — 2025</span>
                 </div>
                 <h1 class="hero-name" id="heroName"></h1>
                 <div class="hero-sub h-anim" id="heroSub" style="--hd:.5s"></div>
                 <p class="hero-text h-anim" id="heroText" style="--hd:.65s"></p>
                 <div class="hero-cta h-anim" style="--hd:.8s">
-                    <a class="btn btn-primary magnetic" href="#contact">START A PROJECT <i
+                    <a class="btn btn-primary magnetic" href="#contact" id="ctaPrimary">START A PROJECT <i
                             data-lucide="arrow-up-right"></i></a>
-                    <a class="btn btn-ghost" href="#work">SEE THE WORK</a>
+                    <a class="btn btn-ghost" href="#work" id="ctaGhost">SEE THE WORK</a>
                 </div>
                 <div class="hero-utils h-anim" style="--hd:.95s">
                     <button id="soundBtn" aria-label="toggle sound">
                         <span class="eq"><i></i><i></i><i></i></span>
                         <span id="soundLbl">SOUND — OFF</span>
                     </button>
-                    <div class="scroll-cue">SCROLL <i data-lucide="chevron-down"></i></div>
+                    <div class="scroll-cue" id="scrollCue">SCROLL <i data-lucide="chevron-down"></i></div>
                 </div>
             </div>
             <div class="hero-media brk">
                 <img id="heroImg" src="https://picsum.photos/seed/operator-portrait/900/1200.jpg"
                     alt="Black and white portrait of the developer">
                 <span class="stamp">EST. 2019 — MASHHAD</span>
-                <span class="v-cap">FIG.00 — THE OPERATOR</span>
+                <span class="v-cap" id="figCap">FIG.00 — THE OPERATOR</span>
             </div>
             <div class="hero-stats h-anim" id="heroStats" style="--hd:1.05s"></div>
         </section>
@@ -99,7 +99,7 @@
         <section id="services" class="sec">
             <div class="container">
                 <header class="sec-head" data-reveal>
-                    <div class="sec-meta"><span class="o">03/</span> WHAT I DO</div>
+                    <div class="sec-meta"><span class="o">03/</span> <span id="methodLabel">WHAT I DO</span></div>
                     <h2 class="sec-title" id="servicesTitle">SERVICES</h2>
                     <p class="sec-sub" id="servicesSub"></p>
                     <p class="sec-text" id="servicesText"></p>
@@ -112,7 +112,7 @@
         <section id="about" class="sec">
             <div class="container">
                 <header class="sec-head" data-reveal>
-                    <div class="sec-meta"><span class="o">04/</span> THE OPERATOR</div>
+                    <div class="sec-meta"><span class="o">04/</span> <span id="aboutLabel">THE OPERATOR</span></div>
                     <h2 class="sec-title" id="aboutTitle">ABOUT</h2>
                     <p class="sec-sub" id="aboutSub"></p>
                 </header>
@@ -120,17 +120,17 @@
                     <figure class="about-fig brk" data-reveal>
                         <img id="aboutImg" src="https://picsum.photos/seed/about-operator/900/1100.jpg"
                             alt="Black and white photo of the operator">
-                        <figcaption class="fig-cap"><span>FIG.01 — THE OPERATOR</span><span>IRN / MASHHAD</span>
+                        <figcaption class="fig-cap"><span id="figCap01">FIG.01 — THE OPERATOR</span><span id="figCapLoc">IRN / MASHHAD</span>
                         </figcaption>
                     </figure>
                     <div class="about-body">
                         <p class="about-p" id="aboutText" data-reveal></p>
                         <div class="about-bio" id="aboutBio" data-reveal style="--d:.08s"></div>
-                        <div class="about-pull" data-reveal style="--d:.14s">I DON'T SELL HOURS.<br>I SHIP OUTCOMES.
+                        <div class="about-pull" id="aboutPull" data-reveal style="--d:.14s">I DON'T SELL HOURS.<br>I SHIP OUTCOMES.
                         </div>
                         <div class="discipline" data-reveal style="--d:.2s">
                             <div class="hazard" aria-hidden="true"></div>
-                            <div class="dz-head"><span>DAILY DISCIPLINE</span><span class="o">NON-NEGOTIABLE</span>
+                            <div class="dz-head"><span id="disciplineHead">DAILY DISCIPLINE</span><span class="o" id="disciplineSub">NON-NEGOTIABLE</span>
                             </div>
                             <ul>
                                 <li><span class="t">05:30</span><span>WAKE UP. NO SNOOZE.</span></li>
@@ -141,7 +141,7 @@
                             </ul>
                         </div>
                         <div class="toolbox" data-reveal style="--d:.26s">
-                            <div class="tb-label">TOOLBOX — <span class="o">FULL STACK</span></div>
+                            <div class="tb-label" id="toolboxLabel">TOOLBOX — <span class="o">FULL STACK</span></div>
                             <div class="tb-chips" id="toolbox"></div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
             <div class="works-bglayer" id="worksBg" aria-hidden="true"><img id="worksBgImg" alt=""></div>
             <div class="container">
                 <header class="sec-head" data-reveal>
-                    <div class="sec-meta"><span class="o">05/</span> SELECTED WORK</div>
+                    <div class="sec-meta"><span class="o">05/</span> <span id="worksLabel">SELECTED WORK</span></div>
                     <h2 class="sec-title" id="worksTitle">WORKS</h2>
                     <p class="sec-sub" id="worksSub"></p>
                     <p class="sec-text" id="worksText"></p>
@@ -173,7 +173,7 @@
         <section id="certificates" class="sec">
             <div class="container">
                 <header class="sec-head" data-reveal>
-                    <div class="sec-meta"><span class="o">06/</span> PROOF OF WORK</div>
+                    <div class="sec-meta"><span class="o">06/</span> <span id="certLabel">PROOF OF WORK</span></div>
                     <h2 class="sec-title" id="certTitle">CERTIFICATES</h2>
                     <p class="sec-sub" id="certSub"></p>
                     <p class="sec-text" id="certText"></p>
@@ -182,7 +182,7 @@
                     <div id="certList"></div>
                     <aside class="cert-preview" data-reveal>
                         <div class="cp-frame brk"><img id="cpImg" alt="certificate preview"></div>
-                        <div class="cp-meta"><span id="cpTitle">—</span><span class="o">VERIFIED</span></div>
+                        <div class="cp-meta"><span id="cpTitle">—</span><span class="o" id="certVerified">VERIFIED</span></div>
                     </aside>
                 </div>
             </div>
@@ -193,9 +193,9 @@
 
         <!-- ██ 07 / ETHOS — closing quote (contact_summary_quote — HTML allowed) ██ -->
         <section id="ethos">
-            <div class="q-water" aria-hidden="true">DISCIPLINE</div>
+            <div class="q-water" id="ethosWatermark" aria-hidden="true">DISCIPLINE</div>
             <div class="q-in">
-                <div class="q-kicker"><span class="o">07/</span> ETHOS</div>
+                <div class="q-kicker"><span class="o">07/</span> <span id="ethosLabel">ETHOS</span></div>
                 <div id="quoteLines"></div>
             </div>
         </section>
@@ -208,14 +208,14 @@
         <section id="contact" class="sec">
             <div class="container">
                 <header class="sec-head" data-reveal>
-                    <div class="sec-meta"><span class="o">08/</span> FINAL SET</div>
+                    <div class="sec-meta"><span class="o">08/</span> <span id="contactLabel">FINAL SET</span></div>
                     <h2 class="sec-title" id="contactTitle">CONTACT</h2>
                     <p class="sec-sub" id="contactSub"></p>
                     <p class="sec-text" id="contactText"></p>
                 </header>
                 <div class="contact-grid">
                     <div class="c-left">
-                        <div class="status" data-reveal><span class="dot"></span><span>STATUS — OPEN FOR NEW
+                        <div class="status" id="contactStatus" data-reveal><span class="dot"></span><span>STATUS — OPEN FOR NEW
                                 PROJECTS</span></div>
                         <div class="contact-block" data-reveal style="--d:.08s">
                             <div class="contact-label" id="lblEmail">E-MAIL</div>
@@ -241,7 +241,7 @@
                 <div class="cta-row" data-reveal>
                     <a class="btn btn-primary btn-big magnetic" id="ctaBig" href="#">START A PROJECT <i
                             data-lucide="arrow-up-right"></i></a>
-                    <span class="cta-note">REPLY WITHIN 24H — USUALLY FASTER</span>
+                    <span class="cta-note" id="ctaNote">REPLY WITHIN 24H — USUALLY FASTER</span>
                 </div>
             </div>
         </section>
@@ -250,7 +250,7 @@
     <footer>
         <div class="foot-in">
             <span id="footBrand">© 2025</span>
-            <span>DESIGNED &amp; BUILT IN-HOUSE — RUNNING ON DJANGO</span>
+            <span id="footTag">DESIGNED & BUILT IN-HOUSE — RUNNING ON DJANGO</span>
             <button id="toTop">BACK TO TOP <i data-lucide="arrow-up"></i></button>
         </div>
     </footer>

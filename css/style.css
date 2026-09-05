@@ -85,8 +85,56 @@ button {
     outline-offset: 3px
 }
 
-.mono {
-    font-family: var(--fm)
+/* ---------- Bilingual support ---------- */
+body.lang-fa {
+    direction: rtl;
+    font-family: var(--fb);
+}
+
+body.lang-fa .mm-foot {
+    left: auto;
+    right: 8vw
+}
+
+body.lang-fa .ns-panel {
+    right: auto;
+    left: 0
+}
+
+body.lang-fa .mono,
+body.lang-fa .hero-meta,
+body.lang-fa .nav-links,
+body.lang-fa .nav-meta,
+body.lang-fa .nav-social>button,
+body.lang-fa .ns-panel a,
+body.lang-fa .sec-meta,
+body.lang-fa .s-idx,
+body.lang-fa .c-idx,
+body.lang-fa .foot-in,
+body.lang-fa .scroll-cue,
+body.lang-fa .q-kicker,
+body.lang-fa .local-time {
+    font-family: var(--fm);
+}
+
+.lang-toggle {
+    font-family: var(--fm);
+    font-size: 11px;
+    letter-spacing: .14em;
+    color: var(--dim);
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    transition: color .2s, border-color .2s;
+}
+
+.lang-toggle:hover {
+    color: var(--white);
+    border-color: var(--orange);
+}
+
+.lang-toggle.active {
+    color: var(--orange);
+    border-color: var(--orange);
 }
 
 .o {
