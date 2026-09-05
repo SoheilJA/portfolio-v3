@@ -914,6 +914,11 @@ body.ready .hero-media {
     animation: mq var(--dur, 26s) linear infinite
 }
 
+.mq-g {
+    display: flex;
+    width: max-content;
+}
+
 .marquee.reverse .track {
     animation-direction: reverse
 }

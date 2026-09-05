@@ -16,8 +16,7 @@ const SITE_DATA = {
         services_text: "No agencies. No handoffs. No excuses. One operator who designs the system, writes the code, deploys it — and stays for the maintenance. Pick your program below.",
         about_title: "ABOUT",
         about_subtitle: "Train like an athlete. Code like a pro.",
-        about_text: "I'm Soheil � a full-stack developer from Tehran who treats every project like competition prep: plan, execute, measure, repeat.",
-        about_bio_text: "Six years ago I wrote my first line of Python between training sessions. Today I architect and ship production systems — Django back-ends, WordPress platforms and the front-ends on top — for founders and studios who need one reliable operator instead of a committee.\n\nMy rule is simple: whatever leaves my keyboard must survive real traffic, real deadlines and real users. Clean architecture, honest estimates, documented handovers.\n\nOff the keyboard: 5:30 alarms, barbells, black coffee and a permanently open terminal.",
+        about_text: "I'm Soheil — a full-stack developer from Mashhad who treats every project like competition prep: plan, execute, measure, repeat.", about_bio_text: "Six years ago I wrote my first line of Python between training sessions. Today I architect and ship production systems — Django back-ends, WordPress platforms and the front-ends on top — for founders and studios who need one reliable operator instead of a committee.\n\nMy rule is simple: whatever leaves my keyboard must survive real traffic, real deadlines and real users. Clean architecture, honest estimates, documented handovers.\n\nOff the keyboard: 5:30 alarms, barbells, black coffee and a permanently open terminal.",
         works_title: "WORKS",
         works_subtitle: "Selected work — proof, not promises",
         works_text: "A cut of what I've built. Hover to preview, click for the full breakdown. Some client work sits under NDA — ask me about it over coffee.",
@@ -537,7 +536,7 @@ if (finePointer) {
     }
 })();
 
-/* --- Audio � use hero_audio if set, else neon synth via WebAudio --- */
+/* --- Audio � use hero_audio if set, else neon synth via WebAudio --- */
 let audioOn = false, synth = null, htmlAudio = null;
 $('#soundBtn').addEventListener('click', async () => {
     audioOn = !audioOn;
