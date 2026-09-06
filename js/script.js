@@ -253,7 +253,7 @@ const YEAR = new Date().getFullYear();
 document.title = `${S.hero_title} — ${S.hero_subtitle}`;
 
 /* ╝╝╝ Render: navigation ╝╝╝ */
-(function renderNav() {
+function renderNav() {
     const navLinks = [
         ['#home', t('nav_home')], ['#services', t('nav_services')], ['#about', t('nav_about')],
         ['#work', t('nav_work')], ['#certificates', t('nav_certificates')], ['#contact', t('nav_contact')]
@@ -279,10 +279,10 @@ document.title = `${S.hero_title} — ${S.hero_subtitle}`;
     <button class="lang-toggle" id="langToggleMobile" aria-label="toggle language">${t('lang_toggle')}</button>`;
     $('#langToggle')?.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'fa' : 'en'));
     $('#langToggleMobile')?.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'fa' : 'en'));
-})();
+}
 
 /* ╝╝╝ Render: HERO ╝╝╝ */
-(function renderHero() {
+function renderHero() {
     const parts = t('hero_title').trim().split(/\s+/);
     const l1 = parts[0] || '';
     const l2 = parts.slice(1).join(' ');
@@ -304,7 +304,7 @@ document.title = `${S.hero_title} — ${S.hero_subtitle}`;
       <span class="v" data-count="${v}"><span class="n">0</span>${suf ? `<em>${escFa(suf)}</em>` : ''}</span>
       <span class="k">${escFa(k)}</span>
     </div>`).join('');
-})();
+}
 
 /* ╝╝╝ Render: tickers (pipe separator) ╝╝╝ */
 function buildMarquee(el, raw) {
@@ -443,7 +443,7 @@ $('#certList').innerHTML = DATA.certificates.map((c, i) => `
   </article>`).join('');
 function setCertPreview(i) {
     const c = DATA.certificates[i];
-    $('#cpImg').src = c.image; $('#cpImg').alt = S.cert_image_alt;
+    $('#cpImg').src = c.image; $('#cpImg').alt = t('cert_image_alt');
     $('#cpTitle').textContent = `${c.issuer} — ${String(i + 1).padStart(2, '0')}`;
     $$('.cert-row').forEach((r, j) => r.classList.toggle('on', j === i));
 }
@@ -455,11 +455,11 @@ $$('.cert-row').forEach((row, i) => {
 setCertPreview(0);
 
 /* ╝╝╝ Render: ETHOS (quote — user HTML preserved) ╝╝╝ */
-(function renderQuote() {
+function renderQuote() {
     const lines = String(t('contact_summary_quote') || '').split(/<br\s*\/?>/i).map(s => s.trim()).filter(Boolean);
     $('#quoteLines').innerHTML = lines.map((l, i) =>
         `<div class="q-line"><span style="transition-delay:${.1 + i * .13}s">${l}</span></div>`).join('');
-})();
+}
 
 /* ╝╝╝ Render: CONTACT ╝╝╝ */
 $('#contactTitle').textContent = t('contact_title');
@@ -788,6 +788,7 @@ function renderAll() {
     $('#tabDev').innerHTML = `${escFa(t('tab_dev'))} <span class="cnt">(${String(devCount).padStart(2, '0')})</span>`;
     $('#tabWp').innerHTML = `${escFa(t('tab_wp'))} <span class="cnt">(${String(wpCount).padStart(2, '0')})</span>`;
     $('#wpStatLbl').textContent = t('wp_stat_text');
+    renderWorksList();
     icons();
     $('#certTitle').textContent = t('certificates_title');
     $('#certSub').textContent = t('certificates_subtitle');
@@ -843,3 +844,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const saved = localStorage.getItem('portfolio-lang');
     if (saved === 'fa' || saved === 'en') setLanguage(saved);
 });
+
+renderAll();
